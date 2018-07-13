@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <title>récrée le screenshot</title>
+  </head>
+  <body>
+    <!--<header>-->
+    <div class="grandDivTop">
+      <div class="grosTitreH text-center">
+        <span class='italique'>le </span><span class='gras'>crédit facile</span>
+      </div>
+      <div class='italique2'>.fr</div>
+      <div class="icone"></div>
+      <div class="divPourcentage">
+        <p class='pourcent'>1%* </p><p class="TAEGF">TAEG fixe</p> <p class='quatreMille'>pour 4000€ empruntés sur 12 mois, hors assurance facultative</p>
+      </div>
+    </div>
+    <!--bloc rose-->
+    <div class="divCenter">
+      <div class="divRose">
+        <div class="text-center textCarreRose">
+          <p class='BdC'>Bessoin de crédit</p>
+        </div>
+        <div class="trait"></div>
+      </div>
+    </div>
+    <!--fond background + autres-->
+    <div class="fondBackground">
+        <div class="placementDivPrix">
+          <div class="divPrix">
+            <div class="divTitrePrix text-center">
+            Montant nécessaire à votre projet ?
+            </div>
+            <div class="prixFlex">
+              <div class="choixPrix">
+              <div class="montant">1 000 €</div>
+              <div class="montant">7 000 €</div>
+              <div class="montant">10 000 €</div>
+              <div class="montant">15 000 €</div>
+              <div class="montant">20 000 €</div>
+              <div class="montant">25 000 €</div>
+              <div class="montant">30 000 €</div>
+            </div>
+          </div>
+          <div class="prixFlex">
+            <div class="choixPrix2">
+              <div class="montant">35 000 €</div>
+              <div class="montant">40 000 €</div>
+              <div class="montant">50 000 €</div>
+              <div class="montant">Autre montant</div>
+            </div>
+          </div>
+          <div class="barDePourcent" id='bar'>
+            <div class="barDeProgression text-center" id='bar2'>
+            </div>
+          </div>
+          <div class="boutonPlusEtMoins">
+            <button type="button" class='boutonPlus'name="button" onclick=soustraire()><</button>
+            <div class="separeBouton"></div>
+            <button type="button" class='boutonMoins' name="button" onclick=ajouter()>></button>
+          </div>
+          <div class="imgSiteSecurise"></div>
+        </div>
+      </div>
+      <div class="blocimg">
+        <div class="imgPartenaire">image younited credit.</div>
+        <div class="imgPartenaire">image banque casino</div>
+        <div class="imgPartenaire">image banque et assurance</div>
+        <div class="imgPartenaire">image cetelem</div>
+        <div class="imgPartenaire">image franfinance</div>
+        <div class="imgPartenaire">image cofinga</div>
+      </div>
+    </div>
+    <!--repere responsive-->
+    <p class="example">Resize the browser window to see how the background color of this paragraph changes on different screen sizes.</p>
+  </body>
+  <script type="text/javascript" src='./js/script.js'></script>
+</html>
