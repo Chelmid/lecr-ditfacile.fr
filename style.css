@@ -339,8 +339,8 @@ body{
   .blocimg {
     display: flex;
     position: absolute;
-    bottom: -54%;
-    left: 9%;
+    bottom: -59%;
+    left: 13%;
     margin: auto;
     width: 83%;
     flex-wrap: wrap;
