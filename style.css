@@ -263,7 +263,7 @@ body{
   .example {
     background: red;
     position: absolute;
-    top: 160%;
+    top: 159%;
   }
 
   .grandDivTop{
@@ -344,7 +344,7 @@ body{
   .blocimg {
     display: flex;
     position: absolute;
-    bottom: -54%;
+    top: 139%;
     left: 20%;
     margin: auto;
     width: 74%;
@@ -406,6 +406,7 @@ body{
   }
   .blocimg{
         flex-wrap: wrap;
+        top: 84%;
   }
 }
 
@@ -480,8 +481,13 @@ body{
     height: 500px;
     width: 80%;
   }
+
   .imgPartenaire{
     margin: 1px 1px 1px 3%;
+  }
+
+  .blocimg{
+    bottom: 7%;
   }
 }
 
@@ -542,7 +548,7 @@ body{
   }
 
   .blocimg{
-    bottom: 11%;
+    bottom: 7%;
     left: 16%;
   }
 
@@ -606,7 +612,7 @@ body{
   }
 
   .blocimg{
-    bottom: 11%;
+    bottom: 7%;
     left: 20%;
   }
   .divPrix {
