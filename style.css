@@ -5,7 +5,6 @@
     color: white;
 }
 
-
 /*body*/
 body{
   margin:0;
@@ -15,14 +14,15 @@ body{
 .grandDivTop{
   display: flex;
   height: 175px;
-  /* margin-left: 20vw; */
   width: 45%;
   margin: auto;
+  margin-bottom: 10px;
 }
 
 .grosTitreH{
   color: #f37189;
   font-size: 2.5em;
+  display: flex;
 }
 
 .gras{
@@ -37,7 +37,7 @@ body{
   font-style: italic;
   margin-top: 6px;
   color: #f37189;
-  font-size: 2.5em;
+  font-size: 1em;
 }
 
 /*image smile*/
@@ -50,29 +50,42 @@ body{
 
 /*bloc 1%*/
 .divPourcentage {
-    height: 200px;
-    position: absolute;
-    width: 220px;
-    background-color: #FFFFFF;
-    margin-left: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    left: 62%;
-    border: 1px black solid;
+  height: 200px;
+  width: 220px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px black solid;
 }
 
-.divRose{
-  position: absolute;
+.bloc1{
+  display: flex;
+  margin: auto;
+}
+
+.bloc2{
+  position: relative;
+  z-index: 1;
+  left: 25%;
+}
+
+.divRose {
+  /* position: relative; */
   background-color: #f37189;
-  height: 130px;
-  width: 45%;
-  top: 11%;
+  height: 120px;
+  width: 90%;
+  /* top: 11%; */
   margin: auto;
+  left: 9%;
 }
 
-.divCenter{
+.divCenter {
   margin: auto;
-  width: 60%;
+  width: 55%;
+  position: relative;
+  top: -55px;
+  left: -9%;
+  z-index: 1
 }
 
 .textCarreRose{
@@ -116,22 +129,30 @@ body{
 
 /*fond background body*/
 .fondBackground{
-    background-color:#b3f7f9;
-    width: 100%;
-    height: 769px;
-    margin: auto;
+  background-color:#b3f7f9;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  top: -178px;
+}
+
+.blocfond{
+  background-color:#b3f7f9;
+  height: 565px;
+  width: 100%;
 }
 
 /*bloc prix*/
 
 .divPrix{
-  position: absolute;
+  position: relative;
   background-color: #FFFFFF;
   box-shadow: 1px 1px 1px 1px #000000;
   margin: auto;
-  width: 80%;
+  width: 78%;
   height: 500px;
-  top: 24.5%;
+  top: 74px;
+  left: -9%;
 }
 
 .placementDivPrix{
@@ -146,20 +167,17 @@ body{
   font-size: 25px;
   font-weight: bold;
   font-style: italic;
+  padding: 20px;
 }
 
 .choixPrix{
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  width: 76%;
 }
 
 .choixPrix2{
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  width: 54%;
 }
 
 .montant{
@@ -233,7 +251,7 @@ body{
 .imgSiteSecurise{
   background-image: url('./img/siteSécurisé.png');
   background-repeat: no-repeat;
-  width: 100px;
+  width: 125px;
   height: 100px;
   margin: auto;
 }
@@ -241,11 +259,10 @@ body{
 /*bloc image partenaire*/
 .blocimg{
   display: flex;
-  position: absolute;
-  bottom: 7%;
-  left: 11%;
+  position: relative;
   margin: auto;
-  width: 80%;
+  width: 70%;
+  top: 140px;
 }
 
 .imgPartenaire{
@@ -258,236 +275,241 @@ body{
 
 }
 
+.bloc2{
+  left: 25%;
+}
+
+.espaceVide{
+
+}
+
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 414px) {
   .example {
     background: red;
-    position: absolute;
-    top: 159%;
   }
 
   .grandDivTop{
-    width: 65%;
-    padding-top: 20px;
-  }
-
-  .grosTitreH {
-    font-size: 1.5em;
-  }
-
-  .italique2{
-    font-size: 1.5em;
+    width: 100%;
+    display: block;
   }
 
   .icone{
     display: none;
   }
 
-  .divPourcentage {
-    width: 101%;
-    position: absolute;
-    margin-left: 0%;
-    border: 1px black solid;
-    left: 0;
-    top: 11%;
-  }
-  .pourcent{
-    margin-left: 11%;
-  }
-
-  .TAEGF {
-    padding: 24px 0px 0px 24px;
-  }
-
-  .divRose {
-    position: absolute;
+  .divCenter{
     width: 100%;
-    top: 11%;
     left: 0;
-    top: 29%;
-    height: 60px;
   }
 
-  .divPrix {
-    position: absolute;
-    margin: auto;
+  .divRose{
     width: 100%;
-    height: 910px;
-    top: 35.5%;
+    height: 58px;
   }
 
-  .placementDivPrix {
-    margin: 0;
-  }
-
-  .choixPrix {
-    display:block;
-    width: 38%;
-  }
-
-  .choixPrix2 {
-    display:block;
-    width: 38%;
-  }
-
-  .boutonPlusEtMoins {
-    width: 60%;
-    padding-top: 20px;
-  }
-
-  .imgSiteSecurise {
-    width: 130px;
-    margin-top: 13px;
-    height: 55px;
-  }
-
-  .blocimg {
-    display: flex;
-    position: absolute;
-    top: 139%;
-    left: 20%;
-    margin: auto;
-    width: 74%;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .example {background: green;}
-
-  .grandDivTop {
-    width: 75%;
-    margin-left: 15%;
-  }
-
-  .divRose {
-    height: 131px;
-    width: 61%;
-    left: 0;
+  .bloc2{
+    position: relative;
+    left: 0px;
+    top: 76%;
   }
 
   .divPourcentage{
-    left: 51%;
-    z-index: 1;
-    top: 11%;
-    height: 127.5px;
-    width: 39%;
+    width: 100%;
+    height: 120px;
   }
 
-  .TAEGF {
-    font-size: 18px;
-    margin-top: 25px;
+  .blocfond {
+    height: 1110px;
   }
 
-  .pourcent {
-    font-size: 40px;
+  .fondBackground{
+    top: -163px;
   }
 
   .divPrix{
+    height: 867px;
+    left: 0;
     width: 100%;
+    top: 176px;
   }
 
   .placementDivPrix {
-    margin: 0;
+    width: 100%;
+    margin: auto;
   }
 
-  .choixPrix2 {
-    width: 84%;
+  .grosTitreH {
+    font-size: 2em;
   }
 
-  .imgSiteSecurise{
-    width: 125px;
+  .bloc1 {
+    margin-left: 15%;
+    margin-top: 10%;
   }
-  .imgPartenaire {
-    margin: 1px 1px 1px 11%;
+
+  .quatreMille{
+    margin-bottom: 10px;
   }
+
+  .choixPrix{
+    text-align: center;
+    display: block;
+  }
+
+  .choixPrix2{
+    text-align: center;
+    display: block;
+  }
+
+  #bar{
+      margin-bottom: 20px;
+  }
+
+  .blocimg {
+    width: 75%;
+    top: 220px;
+    flex-wrap: wrap;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 415px) {
+  .example {background: green;}
+
+  .grosTitreH{
+    font-size: 2em;
+  }
+
+  .grandDivTop{
+    display: block;
+    width: 88%;
+  }
+
+  .divPourcentage {
+    height: 151px;
+    width: 240px;
+  }
+
+  .bloc2{
+    left: -7%;
+  }
+
+  .divCenter{
+    left: -29%;
+  }
+
+  .divRose{
+      width: 78%;
+  }
+
+  .bloc2 {
+    width: 4%;
+    margin: auto;
+  }
+
+  .divPrix{
+    height: 666px;
+    left: 0;
+    width: 100%;
+  }
+
+  .blocfond{
+    height: 805px;
+  }
+
   .blocimg{
-        flex-wrap: wrap;
-        top: 84%;
+    flex-wrap: wrap;
+    width: 58%;
+  }
+
+  .placementDivPrix{
+    width: 100%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .example {background: blue;}
+  .example {background: blue;}
 
-  .divPourcentage{
-    width: 39%;
-    height: 127.5px;
+  .grandDivTop{
+    width: 90%;
+    display: flex;
   }
 
-  .divRose {
-    height: 131px;
+  .bloc2{
+    left: -17%;
+  }
+
+  .blocimg{
+    width: 43%;
+    top: 110px;
+    flex-wrap: wrap;
+    left: -5%;
+  }
+
+  .grosTitreH{
+    font-size: 2.5em;
+  }
+
+  .divCenter{
+    left: -9%;
+    top: -55px;
+  }
+
+  .divPourcentage {
+    height: 200px;
   }
 
   .divPrix{
-    height: 510px;
-    width: 80%;
+    height: 500px;
+  }
+
+  .blocfond{
+    height: 565px;
   }
 
   .placementDivPrix {
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
-
-  .choixPrix2 {
-    width: 80%;
-  }
-
-  .imgSiteSecurise{
-      width: 125px;
-    }
-    .imgPartenaire{
-      margin: 1px 1px 1px 13%;
-    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .example {background: orange;}
 
-  .divPourcentage{
-    width: 36%;
-    height: 127.5px;
-    left: 44%;
-  }
-
-  .divRose {
-    height: 132px;
-    width: 44%;
-    left: 10%;
-  }
-
-  .grandDivTop {
-    width: 52%;
-  }
-
-  .choixPrix{
-        width: 97%;
-  }
-
-  .choixPrix2{
-        width: 63%;
-  }
-
-  .imgSiteSecurise{
-        width: 125px;
-  }
-
-  .divPrix {
-    height: 500px;
-    width: 80%;
-  }
-
-  .imgPartenaire{
-    margin: 1px 1px 1px 3%;
+  .grandDivTop{
+    width: 71%;
+    display: flex;
   }
 
   .blocimg{
-    bottom: 7%;
+    width: 85%;
+    left: 0%;
+  }
+
+  .bloc2{
+    left: -7%;
+  }
+  .divCenter{
+    left: -9%;
+    top: -55px;
+  }
+
+  .divPourcentage {
+    height: 200px;
+  }
+  .divPrix{
+        height: 500px;
+  }
+  .blocfond{
+        height: 565px;
+  }
+  .placementDivPrix {
+      width: 90%;
+      margin: auto;
   }
 }
 
@@ -495,128 +517,96 @@ body{
 @media only screen and (min-width: 1200px) {
     .example {background: pink;}
 
-  .grandDivTop {
-    width: 48%;
+    .grandDivTop{
+      width: 60%;
+      display: flex;
+    }
+
+    .grosTitreH{
+      font-size: 2.5em;
+    }
+
+    .prixFlex1{
+      margin: auto;
+      width: 78vh;
+    }
+
+  .prixFlex2{
     margin: auto;
-  }
-
-  .grosTitreH {
-    font-size: 3em;
-  }
-
-  .italique2{
-    font-size: 3em;
-  }
-
-  .divPourcentage{
-    margin-left: 28%;
-    top: 0;
-    width: 236px;
-    height: 205.5px;
-  }
-
-  .pourcent {
-    font-size: 50px;
-    padding: 0px 0px 0px 15px;
-  }
-
-  .divCenter {
-    margin: auto;
-    width: 60%;
-  }
-
-  .divRose {
-    height: 132px;
-    left: auto;
-    width: 46%;
-  }
-
-  .choixPrix {
-    width: 80%;
-  }
-
-  .choixPrix2 {
-    width: 52%;
-  }
-
-  .boutonMoins{
-    margin-left: 30px;
-  }
-
-  .imgSiteSecurise{
-    width: 125px;
+    width: 53vh;
   }
 
   .blocimg{
-    bottom: 7%;
-    left: 16%;
+    position: relative;
+    margin: auto;
+    width: 75%;
+    left: 0%;
   }
 
-  .divPrix {
-    height: 500px;
-    width: 80%;
+  .divCenter{
+    left: -9%;
+    top: -55px;
+  }
+
+  .divPourcentage {
+    height: 200px;
+  }
+
+  .divPrix{
+        height: 500px;
+  }
+  .blocfond{
+        height: 565px;
+  }
+  .placementDivPrix {
+      width: 90%;
+      margin: auto;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-    .example {background: black;}
+  .example {background: black;}
 
-  .grandDivTop {
-    width: 50%;
-    margin: auto;
+  .separeBouton {
+    width: 83%;
   }
-
-  .grosTitreH {
-    font-size: 3em;
-  }
-
-  .italique2{
-    font-size: 3em;
-  }
-
-  .divPourcentage{
-    margin-left: 28%;
-    top: 0;
-    height: 205.5px;
-    width: 250px;
-  }
-
-  .pourcent {
-    font-size: 60px;
-  }
-
-  .divCenter {
-    margin: auto;
-    width: 70%;
-  }
-
-  .divRose {
-    height: 132px;
-    left: auto;
-  }
-
-  .choixPrix {
-    width: 60%;
-  }
-
-  .choixPrix2 {
-    width: 40%;
-  }
-
-  .boutonMoins{
-    margin-left: 30px;
-  }
-
-  .imgSiteSecurise{
-    width: 125px;
+  .bloc2{
+    left: 25%
   }
 
   .blocimg{
-    bottom: 7%;
-    left: 20%;
+    width: 65%;
+        left: 0%;
   }
-  .divPrix {
-    height: 500px;
-    width: 80%;
+
+  .grandDivTop {
+    display: flex;
+    height: 175px;
+    width: 45%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .divPourcentage {
+    height: 200px;
+    width: 220px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px black solid;
+  }
+  .divCenter{
+    left: -9%;
+    top: -55px;
+  }
+  .divPrix{
+      height: 500px;
+  }
+  .blocfond{
+    height: 565px;
+  }
+  .placementDivPrix {
+    width: 90%;
+    margin: auto;
   }
 }
